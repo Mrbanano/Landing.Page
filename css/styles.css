@@ -86,7 +86,8 @@
   }
 
   .CardText--btn{
-    width: 308px;
+    margin-block-start: 50px;
+    width: 95%;
     height: 51px;
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -102,4 +103,5 @@
   .CardText__btn--primary{   
       font: var(--BtnMobile);
       color: var(--back);
+      text-decoration: none;
   }
