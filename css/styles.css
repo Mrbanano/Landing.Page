@@ -12,17 +12,9 @@
   
     /*font size variable*/
     --fontBase: "Inter", sans-serif;
-  
-    --headLine: bold 28px/33px var(--fontBase);
-    --Body: 15px/25px var(--fontBase);
-    --Label: 15px/25px var(--fontAlternative);
-    --Number: 15px/25px var(--fontBase);
-  
-    --headLineMTablet: bold 24px/35px var(--fontBase);
-    --BodyTablet: 24px/35px var(--fontBase);
-    --LabelTablet: 16px/35px var(--fontBase);
-    --SocialTablet: 300 12px/35px var(--fontBase);
-  
+
+    --headLineMTablet: bold 48px/58.09px var(--fontBase);
+    --NavTablet: 18px/21.78px var(--fontBase);
     --headLineMobile: bold 47px/58px var(--fontBase);
     --BodyMobile: 14px/22px var(--fontBase);
     --BtnMobile: bold 22px/27px var(--fontBase);
@@ -41,28 +33,33 @@
     min-width: 300px;
   }
   
-
+  .Header{
+    font: var(--NavTablet);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+  }
   .Header--image img{
       margin-block-start: 15px;
       
   }
-
   .Header--nav{
       display: none;
   }
   .Header__Btncontainer{
-    border: 2px solid red;
-      display: flex;
-      display: none;
+    display: none;
+    align-items: center;
+  }
+  .Header__Btncontainer a{
+    text-decoration: none;
   }
   .Header--nav ul {
-      border: 2px solid green;
       display:flex;
       flex-direction: row;
       list-style: none;
       justify-content: space-between;
   }
   .Header--nav ul a {
+      padding-inline-end: 40px;
       text-decoration: none;
       color: black;
   }
@@ -116,4 +113,80 @@
       font: var(--BtnMobile);
       color: var(--back);
       text-decoration: none;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .Main{
+        display: flex;
+        flex-direction: column;
+    }
+    .CardText--title{
+        font: var(--headLineMTablet);
+        max-width: 358px;
+    }
+    .CardText--description{
+        max-width: 338px;
+    }
+    .CardImg{
+        order: 1;
+        padding-inline-end: 24px;
+        align-self: flex-end;
+        width: 630px;
+        height: 587px; 
+    }
+    .CardImg .image{
+        background: url('../assets/images/card-rightTablet.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .CardText--btn{
+        max-width: 190px;
+        margin-inline-start: 0px;
+    }
+    .Header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .Header--nav{
+        display: inline-block;
+    }
+    .Header__Btncontainer{
+        display: flex;
+        flex-direction: row;
+        width: 213px;
+        max-width: 213px;
+        justify-content: space-between;
+    }
+    .Header__Btncontainer .btnSecundary, .btnPrimaty{
+        width: 105px;
+        height: 40px;
+        border-radius: 12px;
+        border: 1px solid #4a96D9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btnPrimaty{
+        width:88px;
+        color: white;
+        background-color:#4a96D9 ;
+        font-weight: bold;
+    }
+    .Header__Btncontainer .btnSecundary .btn, .btnPrimaty .btn{
+        text-decoration: none;
+        color: var(--back);
+    }
+    .btnPrimaty .btn{
+        color: white;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .Header{
+        border: 2px solid black;
+    }
   }
