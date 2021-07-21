@@ -1,0 +1,105 @@
+:root {
+    /*colors*/
+    --Background: linear-gradient(270deg, #F9FFEC 0%, #BBFAFF 45.08%, #E9C3FE 87.52%);
+    --Gray: #999099;
+    --softGray: #e5e5e5;
+    --secundary: #eef7f8;
+    --Highlight: #5fbbc1;
+    --White: hsl(0, 0%, 100%);
+    --back: #000000;
+    --Slightlytransparent: hsla(0, 0%, 100%, 0.75);
+    --Slightly: hsla(0, 0%, 100%, 0.6);
+  
+    /*font size variable*/
+    --fontBase: "Inter", sans-serif;
+  
+    --headLine: bold 28px/33px var(--fontBase);
+    --Body: 15px/25px var(--fontBase);
+    --Label: 15px/25px var(--fontAlternative);
+    --Number: 15px/25px var(--fontBase);
+  
+    --headLineMTablet: bold 24px/35px var(--fontBase);
+    --BodyTablet: 24px/35px var(--fontBase);
+    --LabelTablet: 16px/35px var(--fontBase);
+    --SocialTablet: 300 12px/35px var(--fontBase);
+  
+    --headLineMobile: bold 47px/58px var(--fontBase);
+    --BodyMobile: 14px/22px var(--fontBase);
+    --BtnMobile: bold 22px/27px var(--fontBase);
+  }
+  
+  body {
+    background: var(--Background);
+    background-image: url('../assets/images/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fontBase);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    min-width: 300px;
+  }
+  
+
+  .Header--image img{
+      margin-block-start: 15px;
+      
+  }
+
+  .Header--nav{
+      display: none;
+  }
+  .Header__Btncontainer{
+    border: 2px solid red;
+      display: flex;
+      display: none;
+  }
+  .Header--nav ul {
+      border: 2px solid green;
+      display:flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-between;
+  }
+  .Header--nav ul a {
+      text-decoration: none;
+      color: black;
+  }
+
+  .CardText{
+      margin-inline-start: 16px;
+      margin-inline-end: 24px;
+  }
+  .CardText--title{
+      margin-block-start: 30px;
+      margin-block-end: 0px;
+      text-align: left;
+      font: var(--headLineMobile);
+  }
+
+  .CardText--description{
+    margin-block-end: 17px;
+    text-align: left;
+    font: var(--BodyMobile);
+    color: var(--Gray);
+  }
+
+  .CardText--btn{
+    width: 308px;
+    height: 51px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Background);
+    border-radius: 16px;
+    margin-block-end: 24px;
+    border: 4px solid white;
+    box-shadow: 0 20px 25px 0 #e9c3fe4d;
+  }
+  .CardText__btn--primary{   
+      font: var(--BtnMobile);
+      color: var(--back);
+  }
