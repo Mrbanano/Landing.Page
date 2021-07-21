@@ -186,7 +186,41 @@
   }
 
   @media only screen and (min-width: 992px) {
+    body{
+        background-color: #fff;
+        background-image: none;
+    }
+    .CardImg .image{
+        background: none;
+    }
     .Header{
-        border: 2px solid black;
+        padding-inline-start: 72px;
+        padding-inline-end: 72px;
+        margin-inline-start: auto;
+        margin-inline-end:auto ;
+        max-width: 1152px;
+        height: 47px;
+    }
+    .CardImg .image{
+        max-width: 751px;
+        max-height: 581px;
+        background: url('../assets/images/card-rightDesktop.png');
+    }
+    .Main{
+        flex-direction: row;
+        max-width: 1151px;
+        max-height: 643px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    }
+    .wrap{
+        position: absolute;
+        top: calc(50% - 350px);
+        left: calc(50% - 576px);
+        border: 3px solid var(--Slightlytransparent);
+        border-radius: 15px;
+        -webkit-box-shadow: 6px 10px 22px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 10px 22px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 6px 10px 22px -4px rgba(0, 0, 0, 0.75);
     }
   }
